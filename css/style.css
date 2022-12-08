@@ -1,0 +1,111 @@
+/* Colors */
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-gray: hsl(0, 0%, 63%);
+  --color-dark-gray: hsl(0, 0%, 27%);
+}
+/* /Colors */
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+/* /Base Styles */
+
+/* Custom Classes */
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+/* /Custom Classes */
+
+/* Container & Wrappers */
+.container {
+  position: relative;
+}
+/* /Container & Wrappers */
+
+/* Navbar */
+.navbar-wrapper {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.logo-wrapper {
+  padding-right: 60px;
+}
+
+.navbar__items {
+  list-style: none;
+  color: var(--color-white);
+  text-transform: lowercase;
+}
+
+.navbar__item {
+  font-size: 16px;
+  padding-right: 30px;
+}
+/* /Navbar */
+
+/* Hero */
+/* .hero__img-wrapper {
+  position: relative;
+} */
+/* /Hero */
+
+/* Slider Buttons */
+.hero__slider-btns {
+  position: absolute;
+  top: 480px;
+  right: 0;
+}
+/* Slider Buttons */
+.hero__slider-btn {
+  background-color: var(--color-black);
+  padding: 30px 35px;
+}
+/* /Slider Buttons */

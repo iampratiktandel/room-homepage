@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Room homepage</title>
 </head>
 
@@ -14,24 +18,36 @@
   <div class="wrapper">
     <!-- Container -->
     <div class="container">
-      <!-- Hero -->
-      <div class="hero">
-        <!-- <div class="logo-wrapper">
-          <img src="./images/logo.svg" alt="">
-        </div> -->
-        <!-- Navbar -->
-        <div class="navbar">
-          <!-- <ul class="nav-items">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Shop</li>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Contact</li>
-          </ul> -->
+      <!-- Navbar Wrapper -->
+      <div class="navbar-wrapper d-flex">
+        <div class="logo-wrapper">
+          <img src="./images/logo.svg" alt="wesite logo">
         </div>
         <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="navbar__items d-flex justify-content-between">
+            <li class="navbar__item">Home</li>
+            <li class="navbar__item">Shop</li>
+            <li class="navbar__item">About</li>
+            <li class="navbar__item">Contact</li>
+          </ul>
+        </nav>
+        <!-- Navbar -->
+      </div>
+      <!-- Navbar Wrapper -->
+      <!-- Hero -->
+      <div class="hero d-flex">
         <!-- Hero Img Wrapper -->
         <div class="hero__img-wrapper">
           <img src="./images/desktop-image-hero-1.jpg" alt="chair image">
+          <div class="hero__slider-btns d-flex">
+            <div class="hero__slider-btn">
+              <img src="./images/icon-angle-left.svg" alt="slider-icon" class="slider-icon">
+            </div>
+            <div class="hero__slider-btn">
+              <img src="./images/icon-angle-right.svg" alt="slider-icon" class="slider-icon">
+            </div>
+          </div>
         </div>
         <!-- /Hero Img Wrapper -->
         <!-- Hero Content -->
@@ -68,7 +84,7 @@
       <!-- /Hero -->
 
       <!-- About -->
-      <div class="about">
+      <div class="about d-flex">
         <div class="about__img-wrapper">
           <img src="./images/image-about-dark.jpg" alt="dark chair image" class="about__img">
         </div>
