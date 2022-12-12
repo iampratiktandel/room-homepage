@@ -216,6 +216,7 @@ body {
   }
 
   .logo-wrapper {
+    flex-grow: 1;
     padding: 0;
     text-align: center;
     margin-left: -25px;
@@ -317,4 +318,13 @@ body {
   }
 }
 /* /375 px */
+
+/* > 1440px */
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+/* > 1440px */
 /* /Responsive Design */
