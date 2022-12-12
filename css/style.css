@@ -212,20 +212,26 @@ body {
     display: block;
   }
 
-  /* .menu-logo {
-    padding-right: 10px;
-  } */
-
   .logo-wrapper {
     padding: 0;
+    text-align: center;
+    margin-left: -25px;
   }
 
   .navbar-wrapper {
     padding: 30px 0 0 0;
-    justify-content: center;
   }
+
+  .menu-wrapper {
+    margin-left: 25px;
+  }
+
   .navbar {
     display: none;
+  }
+
+  .hero {
+    height: auto;
   }
 
   .hero,
@@ -234,9 +240,13 @@ body {
   }
 
   .hero__img-wrapper {
-    height: 240px;
+    background-image: url("../images/mobile-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 375px;
     width: 100%;
   }
+
   .hero__content {
     padding: 35px 30px;
   }
@@ -264,6 +274,15 @@ body {
 
   .about__content {
     padding: 35px 30px;
+  }
+
+  .hero__slider-btns {
+    bottom: 302px;
+    right: 0;
+  }
+
+  .hero__slider-btn {
+    padding: 15px 20px;
   }
 }
 /* /375 px */
