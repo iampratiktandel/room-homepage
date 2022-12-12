@@ -56,6 +56,26 @@ const onSlideChange = (direction) => {
   }
 };
 
+/** manage style for mobile navigation on close icon click */
+const onMenuClose = () => {
+  const mobileNav = document.querySelector(".mobile-navbar__wrapper");
+  const logo = document.querySelector(".logo-wrapper");
+  const overlay = document.querySelector(".overlay");
+  mobileNav.style.display = "none";
+  logo.style.display = "block";
+  overlay.style.display = "none";
+};
+
+/** manage style for mobile navigation on menu icon click */
+const onMenuOpen = () => {
+  const mobileNav = document.querySelector(".mobile-navbar__wrapper");
+  const logo = document.querySelector(".logo-wrapper");
+  const overlay = document.querySelector(".overlay");
+  logo.style.display = "none";
+  mobileNav.style.display = "flex";
+  overlay.style.display = "block";
+};
+
 /** slides content data */
 const slides = [
   {

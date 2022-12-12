@@ -24,7 +24,7 @@
         <div class="hero__img-wrapper flex-grow">
           <!-- Navbar Wrapper -->
           <div class="navbar-wrapper d-flex">
-            <div class="menu-wrapper">
+            <div class="menu-wrapper" onclick="onMenuOpen()">
               <img src="./images/icon-hamburger.svg" alt="menu logo" class="menu-logo">
             </div>
             <div class="logo-wrapper flex-grow">
@@ -42,7 +42,27 @@
             <!-- Navbar -->
           </div>
           <!-- Navbar Wrapper -->
-          <!-- <img src="./images/desktop-image-hero-1.jpg" class="hero__img" alt="chair image"> -->
+
+          <!-- Mobile Navbar Wrapper -->
+          <div class="mobile-navbar__container">
+            <div class="mobile-navbar__wrapper d-none" onclick="onMenuClose()">
+              <div class="menu-close__wrapper">
+                <img src="./images/icon-close.svg" alt="close icon">
+              </div>
+              <!-- Navbar -->
+              <nav class="mobile-navbar flex-grow">
+                <ul class="mobile-navbar__items d-flex justify-content-between">
+                  <li class="mobile-navbar__item">Home</li>
+                  <li class="mobile-navbar__item">Shop</li>
+                  <li class="mobile-navbar__item">About</li>
+                  <li class="mobile-navbar__item">Contact</li>
+                </ul>
+              </nav>
+              <!-- Navbar -->
+            </div>
+            <div class="overlay d-none"></div>
+          </div>
+          <!-- Mobile Navbar Wrapper -->
           <div class="hero__slider-btns d-flex">
             <div class="hero__slider-btn" onclick="onSlideChange('prev')" id="slider-btn-prev">
               <img src="./images/icon-angle-left.svg" alt="slider-icon" class="slider-icon">
